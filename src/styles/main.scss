@@ -31,25 +31,6 @@ body {
   width: 800px;
 }
 
-h3 {
-  margin: 0;
-  opacity: 0.5;
-  letter-spacing: 2px;
-}
-
-img {
-  width: 100px;
-  margin-bottom: 20px;
-}
-
-.joke {
-  font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 40px;
-  margin: 50px auto;
-  max-width: 600px;
-}
-
 .btn {
   background-color: $primary-color;
   color: $secondary-color;
@@ -73,3 +54,76 @@ img {
     color: $primary-color;
   }
 }
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#username, #email, #zipcode, #password {
+  border: 0;
+  border-radius: 10px;
+  box-shadow: $box-shadow;
+  padding: 14px 20px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  width: 50%;
+  cursor: pointer;
+
+  &:active {
+    transform: scale(1);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $secondary-color;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:invalid:required {
+  color: rgb(179, 31, 63);
+}
+input:focus:invalid {
+  outline: none;
+}
+
+.error {
+  width: 50%;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: rgb(179, 31, 63);
+  border-radius: 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.5em;
+  margin-bottom: 10px;
+
+}
+
+
+
+

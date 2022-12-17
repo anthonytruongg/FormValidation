@@ -5,14 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Webpack App</title>
-<script defer src="bundle7e19da47ff2bd537bde7.js"></script></head>
+<script defer src="bundleeb80201b56a8f412337a.js"></script></head>
 <body>
     <div class="container">
-        <img id="laughImg" alt="">
-        <h3>Don't Laugh Challenge</h3>
-        <div id="joke" class="joke"></div>
-        <button id="jokeBtn" class="btn">Get Another Joke</button>
-        <h1>testing</h1>
+        <h1 class="landingPage">Landing Page</h1>
+        <form id="form" novalidate>
+                <input type="text" name="username" id="username" placeholder="Username" required>
+                <div class="errorMessage">
+                    <input type="text" name="email" id="email" placeholder="Email" required>
+                    <span class="error" aria-live="polite"></span>
+                </div>
+                <input type="number" name="zipcode" id="zipcode" placeholder="Zipcode" minlength="5" maxlength="7" required>
+                <input type="text" name="password" id="password" placeholder="Password" minlength="8" required>
+                <div class="submitButtons">
+                    <input type="submit" class= "btn" value="Register">
+                </div>
+        </form>
     </div>
 </body>
 </html>
